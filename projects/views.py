@@ -11,3 +11,12 @@ def list_projects(request):
         "show_project": projects,
     }
     return render(request, "projects/list_projects.html", context)
+
+
+@login_required
+def show_project(request, id):
+    project = get_object_or_404(Project, id=id)
+    context = {
+        "show_project": project,
+    }
+    return render(request, "projects/detail.html", context)

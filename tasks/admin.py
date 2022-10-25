@@ -5,4 +5,11 @@ from .models import Task
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    pass
+    list_display = (
+        "name",
+        "start_date",
+        "due_date",
+        "is_completed",
+        "project",
+        "assignee",
+    )
