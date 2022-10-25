@@ -14,8 +14,8 @@ def list_projects(request):
 
 
 @login_required
-def show_project(request, id):
-    project = get_object_or_404(Project, id=id)
+def show_project(request, pk):
+    project = get_object_or_404(Project, pk=pk)
     context = {
         "show_project": project,
     }
