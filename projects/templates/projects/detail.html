@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <main>
+    <main id="is-babypink">
         <div>
             <h1>{{ show_project.name }}</h1>
             <p>{{ show_project.description }}</p>
@@ -25,9 +25,9 @@
                     <tr>
                         <td>{{ task.name }}</td>
                         <td>{{ task.assignee }}</td>
-                        <td>{{ task.start_date }}</td>
-                        <td>{{ task.due_date }}</td>
-                        <td>{{ task.is_completed|yesno }}</td>
+                        <td>{{ task.start_date|date:"N j, Y g:i a"}}</td>
+                        <td>{{ task.due_date|date:"N j, Y g:i a" }}</td>
+                        <td>{{ task.is_completed|yesno:'Completed, Not completed' }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
