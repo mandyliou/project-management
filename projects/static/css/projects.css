@@ -1,0 +1,80 @@
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+a, h1 {
+    text-decoration: none;
+    color:black
+}
+
+tr:nth-child(even) {
+    background-color: #F3ECE7;
+}
+/* #FADCD2 */
+div > h1 {
+    color: #c37d80;
+}
+/*
+#AA6F5D #DABCB2 #E1BDAB DDB9B1*/
+nav > a {
+    background-color:#d5a3a7;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px 20px;
+    font-size: 20px;
+
+}
+
+td {
+    color: #925241;
+}
+
+th {
+    color: #703f32;
+}
+#is-beige {
+    background-color: rgba(191, 130, 116, 1);
+    color:aliceblue;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+a:hover {
+    background-color: palevioletred;
+
+}
+body {
+    box-sizing: border-box;
+}
+main {
+    padding: 16px;
+    font-size: 18px;
+}
+
+footer {
+    padding: 25px;
+    font-size: 18px;
+}
+
+img {
+    height: 200px;
+}
+
+nav{
+    border-bottom: 1px solid #be9485;
+    padding: 16px;
+}
+body {
+    font-family: 'Courier New', monospace;
+    background-image: url("https://www.designlovefest.com/wp-content/uploads/downloads/2016/02/desk5.jpg");
+    /* background-image: url("https://data.whicdn.com/images/90546465/original.gif"); The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 888px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    }
