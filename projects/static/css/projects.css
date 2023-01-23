@@ -5,9 +5,10 @@
 }
 
 
-a, h1 {
+a, h1, form {
     text-decoration: none;
-    color:black
+    color:black;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
